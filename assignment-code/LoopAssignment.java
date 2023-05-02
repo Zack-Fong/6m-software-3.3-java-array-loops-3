@@ -43,13 +43,12 @@ public class LoopAssignment {
 
         // Task 3. Use an enhanced for-loop to compute for the average of the given
         // array
-
         int expenses[] = { 120, 130, 114, 112, 132, 154, 123, 112, 165, 144, 188, 200 };
         float average = 0.0f;
         // Add code here
         int total = 0;
-        for (int index = 0; index < expenses.length; index++) {
-            total += expenses[index];
+        for (int expense : expenses) {
+            total += expense;
         }
 
         average = (float) total / expenses.length;
